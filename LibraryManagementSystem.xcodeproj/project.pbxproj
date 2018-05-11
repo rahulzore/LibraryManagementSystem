@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		410053AF9A98E71451D6806B /* Pods_LibraryManagementSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0331724CAD860D332FE6EBDC /* Pods_LibraryManagementSystem.framework */; };
+		8A0510042094096D00385F6B /* BookIssuedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0510032094096C00385F6B /* BookIssuedTableViewCell.swift */; };
+		8A05100620940B3C00385F6B /* BookIssuedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05100520940B3C00385F6B /* BookIssuedTableViewController.swift */; };
+		8A05100820941D0300385F6B /* BookIssuedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05100720941D0300385F6B /* BookIssuedDetailsViewController.swift */; };
+		8A05100B20942C1500385F6B /* BookIssued+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05100920942C1400385F6B /* BookIssued+CoreDataProperties.swift */; };
+		8A05100C20942C1500385F6B /* BookIssued+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05100A20942C1500385F6B /* BookIssued+CoreDataClass.swift */; };
+		8A05100E20942E1B00385F6B /* ReturnBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05100D20942E1B00385F6B /* ReturnBookViewController.swift */; };
+		8A051014209493E700385F6B /* LibrarianSingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A051013209493E700385F6B /* LibrarianSingUpViewController.swift */; };
+		8A0510182094A64400385F6B /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0510172094A64400385F6B /* StudentTableViewController.swift */; };
+		8A05101A2094A7FC00385F6B /* TempStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0510192094A7FC00385F6B /* TempStudentViewController.swift */; };
+		8A05101E2094AC9A00385F6B /* StudentBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05101D2094AC9A00385F6B /* StudentBookTableViewCell.swift */; };
+		8A0510202094B71A00385F6B /* StudentBookIssueDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05101F2094B71A00385F6B /* StudentBookIssueDetailsViewController.swift */; };
+		8A1A9DE02092605F001DEBE2 /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A9DDF2092605F001DEBE2 /* BooksTableViewController.swift */; };
+		8A1A9DE22092779D001DEBE2 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A9DE12092779D001DEBE2 /* RoundedWhiteButton.swift */; };
+		8A1A9DE4209292DC001DEBE2 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A9DE3209292DC001DEBE2 /* StudentViewController.swift */; };
+		8A2722E120913CC7006790E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2722E020913CC7006790E7 /* AppDelegate.swift */; };
+		8A2722E320913CC7006790E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2722E220913CC7006790E7 /* ViewController.swift */; };
+		8A2722E620913CC7006790E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A2722E420913CC7006790E7 /* Main.storyboard */; };
+		8A2722E920913CC7006790E7 /* LibraryManagementSystem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A2722E720913CC7006790E7 /* LibraryManagementSystem.xcdatamodeld */; };
+		8A2722EB20913CC9006790E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2722EA20913CC9006790E7 /* Assets.xcassets */; };
+		8A2722EE20913CC9006790E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A2722EC20913CC9006790E7 /* LaunchScreen.storyboard */; };
+		8A2722F620913E97006790E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A2722F520913E97006790E7 /* GoogleService-Info.plist */; };
+		8A2722F820914E89006790E7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2722F720914E89006790E7 /* LoginViewController.swift */; };
+		8A2722FA20914E95006790E7 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2722F920914E95006790E7 /* SingUpViewController.swift */; };
+		8A2722FC20915B2C006790E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2722FB20915B2C006790E7 /* HomeViewController.swift */; };
+		8A2722FE2091639F006790E7 /* HelperExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2722FD2091639F006790E7 /* HelperExtension.swift */; };
+		8A6E8EC92092A26B00D93CED /* SingletonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E8EC82092A26B00D93CED /* SingletonController.swift */; };
+		8A6E8ECB2092A45200D93CED /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E8ECA2092A45200D93CED /* PersistenceService.swift */; };
+		8A6E8ECD2092B26600D93CED /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E8ECC2092B26600D93CED /* BookTableViewCell.swift */; };
+		8A6E8ECF2092D0B300D93CED /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E8ECE2092D0B300D93CED /* BookDetailViewController.swift */; };
+		8AFCD0FE2093922D0055B5BD /* BookIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFCD0FD2093922D0055B5BD /* BookIssueViewController.swift */; };
+		8AFCD1052093981C0055B5BD /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFCD0FF209398190055B5BD /* Student+CoreDataProperties.swift */; };
+		8AFCD1072093981C0055B5BD /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFCD1012093981A0055B5BD /* Book+CoreDataProperties.swift */; };
+		8AFCD1092093981C0055B5BD /* Book+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFCD1032093981B0055B5BD /* Book+CoreDataClass.swift */; };
+		8AFCD10A2093981C0055B5BD /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFCD1042093981C0055B5BD /* Student+CoreDataClass.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0331724CAD860D332FE6EBDC /* Pods_LibraryManagementSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibraryManagementSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B02EAF2E2A16EBEF83586B /* Pods-LibraryManagementSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryManagementSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-LibraryManagementSystem/Pods-LibraryManagementSystem.release.xcconfig"; sourceTree = "<group>"; };
+		5CF4F5F68091421A2C4C0E9F /* Pods-LibraryManagementSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryManagementSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LibraryManagementSystem/Pods-LibraryManagementSystem.debug.xcconfig"; sourceTree = "<group>"; };
+		8A0510032094096C00385F6B /* BookIssuedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookIssuedTableViewCell.swift; sourceTree = "<group>"; };
+		8A05100520940B3C00385F6B /* BookIssuedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookIssuedTableViewController.swift; sourceTree = "<group>"; };
+		8A05100720941D0300385F6B /* BookIssuedDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookIssuedDetailsViewController.swift; sourceTree = "<group>"; };
+		8A05100920942C1400385F6B /* BookIssued+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BookIssued+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8A05100A20942C1500385F6B /* BookIssued+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BookIssued+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8A05100D20942E1B00385F6B /* ReturnBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnBookViewController.swift; sourceTree = "<group>"; };
+		8A051013209493E700385F6B /* LibrarianSingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarianSingUpViewController.swift; sourceTree = "<group>"; };
+		8A0510172094A64400385F6B /* StudentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
+		8A0510192094A7FC00385F6B /* TempStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempStudentViewController.swift; sourceTree = "<group>"; };
+		8A05101D2094AC9A00385F6B /* StudentBookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentBookTableViewCell.swift; sourceTree = "<group>"; };
+		8A05101F2094B71A00385F6B /* StudentBookIssueDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentBookIssueDetailsViewController.swift; sourceTree = "<group>"; };
+		8A1A9DDF2092605F001DEBE2 /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
+		8A1A9DE12092779D001DEBE2 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
+		8A1A9DE3209292DC001DEBE2 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
+		8A2722DD20913CC7006790E7 /* LibraryManagementSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryManagementSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2722E020913CC7006790E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A2722E220913CC7006790E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A2722E520913CC7006790E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A2722E820913CC7006790E7 /* LibraryManagementSystem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LibraryManagementSystem.xcdatamodel; sourceTree = "<group>"; };
+		8A2722EA20913CC9006790E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A2722ED20913CC9006790E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A2722EF20913CC9006790E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A2722F520913E97006790E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A2722F720914E89006790E7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A2722F920914E95006790E7 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		8A2722FB20915B2C006790E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8A2722FD2091639F006790E7 /* HelperExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtension.swift; sourceTree = "<group>"; };
+		8A6E8EC82092A26B00D93CED /* SingletonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonController.swift; sourceTree = "<group>"; };
+		8A6E8ECA2092A45200D93CED /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		8A6E8ECC2092B26600D93CED /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		8A6E8ECE2092D0B300D93CED /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		8AFCD0FD2093922D0055B5BD /* BookIssueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookIssueViewController.swift; sourceTree = "<group>"; };
+		8AFCD0FF209398190055B5BD /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8AFCD1012093981A0055B5BD /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8AFCD1032093981B0055B5BD /* Book+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8AFCD1042093981C0055B5BD /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A2722DA20913CC7006790E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				410053AF9A98E71451D6806B /* Pods_LibraryManagementSystem.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		459925365C4CB1CCBF550F87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0331724CAD860D332FE6EBDC /* Pods_LibraryManagementSystem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A2722D420913CC7006790E7 = {
+			isa = PBXGroup;
+			children = (
+				8A2722DF20913CC7006790E7 /* LibraryManagementSystem */,
+				8A2722DE20913CC7006790E7 /* Products */,
+				AA3392F2B5AAF3EC37F5E8A7 /* Pods */,
+				459925365C4CB1CCBF550F87 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A2722DE20913CC7006790E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A2722DD20913CC7006790E7 /* LibraryManagementSystem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A2722DF20913CC7006790E7 /* LibraryManagementSystem */ = {
+			isa = PBXGroup;
+			children = (
+				8A05101D2094AC9A00385F6B /* StudentBookTableViewCell.swift */,
+				8A05100A20942C1500385F6B /* BookIssued+CoreDataClass.swift */,
+				8A05100920942C1400385F6B /* BookIssued+CoreDataProperties.swift */,
+				8AFCD0FF209398190055B5BD /* Student+CoreDataProperties.swift */,
+				8AFCD1012093981A0055B5BD /* Book+CoreDataProperties.swift */,
+				8AFCD1032093981B0055B5BD /* Book+CoreDataClass.swift */,
+				8AFCD1042093981C0055B5BD /* Student+CoreDataClass.swift */,
+				8A2722E020913CC7006790E7 /* AppDelegate.swift */,
+				8A2722F720914E89006790E7 /* LoginViewController.swift */,
+				8A2722F920914E95006790E7 /* SingUpViewController.swift */,
+				8A2722E220913CC7006790E7 /* ViewController.swift */,
+				8A2722E420913CC7006790E7 /* Main.storyboard */,
+				8A05101F2094B71A00385F6B /* StudentBookIssueDetailsViewController.swift */,
+				8A0510192094A7FC00385F6B /* TempStudentViewController.swift */,
+				8A0510172094A64400385F6B /* StudentTableViewController.swift */,
+				8A051013209493E700385F6B /* LibrarianSingUpViewController.swift */,
+				8A05100D20942E1B00385F6B /* ReturnBookViewController.swift */,
+				8A05100720941D0300385F6B /* BookIssuedDetailsViewController.swift */,
+				8A05100520940B3C00385F6B /* BookIssuedTableViewController.swift */,
+				8A0510032094096C00385F6B /* BookIssuedTableViewCell.swift */,
+				8AFCD0FD2093922D0055B5BD /* BookIssueViewController.swift */,
+				8A6E8ECE2092D0B300D93CED /* BookDetailViewController.swift */,
+				8A6E8ECC2092B26600D93CED /* BookTableViewCell.swift */,
+				8A1A9DE3209292DC001DEBE2 /* StudentViewController.swift */,
+				8A1A9DE12092779D001DEBE2 /* RoundedWhiteButton.swift */,
+				8A1A9DDF2092605F001DEBE2 /* BooksTableViewController.swift */,
+				8A2722FD2091639F006790E7 /* HelperExtension.swift */,
+				8A2722FB20915B2C006790E7 /* HomeViewController.swift */,
+				8A2722EA20913CC9006790E7 /* Assets.xcassets */,
+				8A2722EC20913CC9006790E7 /* LaunchScreen.storyboard */,
+				8A2722EF20913CC9006790E7 /* Info.plist */,
+				8A2722F520913E97006790E7 /* GoogleService-Info.plist */,
+				8A2722E720913CC7006790E7 /* LibraryManagementSystem.xcdatamodeld */,
+				8A6E8EC82092A26B00D93CED /* SingletonController.swift */,
+				8A6E8ECA2092A45200D93CED /* PersistenceService.swift */,
+			);
+			path = LibraryManagementSystem;
+			sourceTree = "<group>";
+		};
+		AA3392F2B5AAF3EC37F5E8A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CF4F5F68091421A2C4C0E9F /* Pods-LibraryManagementSystem.debug.xcconfig */,
+				22B02EAF2E2A16EBEF83586B /* Pods-LibraryManagementSystem.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A2722DC20913CC7006790E7 /* LibraryManagementSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A2722F220913CC9006790E7 /* Build configuration list for PBXNativeTarget "LibraryManagementSystem" */;
+			buildPhases = (
+				EA6DA1E9E51E9474D0BF6F0E /* [CP] Check Pods Manifest.lock */,
+				8A2722D920913CC7006790E7 /* Sources */,
+				8A2722DA20913CC7006790E7 /* Frameworks */,
+				8A2722DB20913CC7006790E7 /* Resources */,
+				7F678572513FE40FA259C623 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibraryManagementSystem;
+			productName = LibraryManagementSystem;
+			productReference = 8A2722DD20913CC7006790E7 /* LibraryManagementSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A2722D520913CC7006790E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Rahul Zore";
+				TargetAttributes = {
+					8A2722DC20913CC7006790E7 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 8A2722D820913CC7006790E7 /* Build configuration list for PBXProject "LibraryManagementSystem" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A2722D420913CC7006790E7;
+			productRefGroup = 8A2722DE20913CC7006790E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A2722DC20913CC7006790E7 /* LibraryManagementSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A2722DB20913CC7006790E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2722EE20913CC9006790E7 /* LaunchScreen.storyboard in Resources */,
+				8A2722F620913E97006790E7 /* GoogleService-Info.plist in Resources */,
+				8A2722EB20913CC9006790E7 /* Assets.xcassets in Resources */,
+				8A2722E620913CC7006790E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F678572513FE40FA259C623 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LibraryManagementSystem/Pods-LibraryManagementSystem-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LibraryManagementSystem/Pods-LibraryManagementSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA6DA1E9E51E9474D0BF6F0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LibraryManagementSystem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A2722D920913CC7006790E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A1A9DE4209292DC001DEBE2 /* StudentViewController.swift in Sources */,
+				8A2722F820914E89006790E7 /* LoginViewController.swift in Sources */,
+				8A2722E320913CC7006790E7 /* ViewController.swift in Sources */,
+				8A1A9DE22092779D001DEBE2 /* RoundedWhiteButton.swift in Sources */,
+				8A05100E20942E1B00385F6B /* ReturnBookViewController.swift in Sources */,
+				8A05100B20942C1500385F6B /* BookIssued+CoreDataProperties.swift in Sources */,
+				8A05100C20942C1500385F6B /* BookIssued+CoreDataClass.swift in Sources */,
+				8A2722FA20914E95006790E7 /* SingUpViewController.swift in Sources */,
+				8A05100820941D0300385F6B /* BookIssuedDetailsViewController.swift in Sources */,
+				8A6E8ECB2092A45200D93CED /* PersistenceService.swift in Sources */,
+				8AFCD1092093981C0055B5BD /* Book+CoreDataClass.swift in Sources */,
+				8A6E8ECD2092B26600D93CED /* BookTableViewCell.swift in Sources */,
+				8A2722E920913CC7006790E7 /* LibraryManagementSystem.xcdatamodeld in Sources */,
+				8A05100620940B3C00385F6B /* BookIssuedTableViewController.swift in Sources */,
+				8A2722E120913CC7006790E7 /* AppDelegate.swift in Sources */,
+				8A2722FE2091639F006790E7 /* HelperExtension.swift in Sources */,
+				8A6E8ECF2092D0B300D93CED /* BookDetailViewController.swift in Sources */,
+				8A0510182094A64400385F6B /* StudentTableViewController.swift in Sources */,
+				8A05101A2094A7FC00385F6B /* TempStudentViewController.swift in Sources */,
+				8AFCD0FE2093922D0055B5BD /* BookIssueViewController.swift in Sources */,
+				8A05101E2094AC9A00385F6B /* StudentBookTableViewCell.swift in Sources */,
+				8A1A9DE02092605F001DEBE2 /* BooksTableViewController.swift in Sources */,
+				8A0510042094096D00385F6B /* BookIssuedTableViewCell.swift in Sources */,
+				8AFCD1052093981C0055B5BD /* Student+CoreDataProperties.swift in Sources */,
+				8A0510202094B71A00385F6B /* StudentBookIssueDetailsViewController.swift in Sources */,
+				8AFCD10A2093981C0055B5BD /* Student+CoreDataClass.swift in Sources */,
+				8A6E8EC92092A26B00D93CED /* SingletonController.swift in Sources */,
+				8A051014209493E700385F6B /* LibrarianSingUpViewController.swift in Sources */,
+				8AFCD1072093981C0055B5BD /* Book+CoreDataProperties.swift in Sources */,
+				8A2722FC20915B2C006790E7 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A2722E420913CC7006790E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A2722E520913CC7006790E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A2722EC20913CC9006790E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A2722ED20913CC9006790E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A2722F020913CC9006790E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A2722F120913CC9006790E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A2722F320913CC9006790E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CF4F5F68091421A2C4C0E9F /* Pods-LibraryManagementSystem.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LibraryManagementSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahulzore.LibraryManagementSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A2722F420913CC9006790E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B02EAF2E2A16EBEF83586B /* Pods-LibraryManagementSystem.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LibraryManagementSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahulzore.LibraryManagementSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A2722D820913CC7006790E7 /* Build configuration list for PBXProject "LibraryManagementSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2722F020913CC9006790E7 /* Debug */,
+				8A2722F120913CC9006790E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A2722F220913CC9006790E7 /* Build configuration list for PBXNativeTarget "LibraryManagementSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2722F320913CC9006790E7 /* Debug */,
+				8A2722F420913CC9006790E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8A2722E720913CC7006790E7 /* LibraryManagementSystem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8A2722E820913CC7006790E7 /* LibraryManagementSystem.xcdatamodel */,
+			);
+			currentVersion = 8A2722E820913CC7006790E7 /* LibraryManagementSystem.xcdatamodel */;
+			path = LibraryManagementSystem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8A2722D520913CC7006790E7 /* Project object */;
+}
